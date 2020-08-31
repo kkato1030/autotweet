@@ -42,14 +42,6 @@ $ pip install -r requirements.txt
 $ pipenv install
 ```
 
-**Set PATH**
-
-WebDriverへのパスを設定します
-
-```
-$ export PATH=$PATH:`chromedriver-path`
-```
-
 **Set Username / Password**
 
 Twitter ログイン用の Username / Password を設定します
@@ -64,6 +56,7 @@ $ vi login.json
 以下コマンドで Twitter のページが立ち上がり、自動でツイートが投稿されます。
 
 ```
+$ export PATH=$PATH:`chromedriver-path`  # 新しくterminalを開く度、実行
 $ python tweet.py
 ```
 
